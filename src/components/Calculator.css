@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding:0;
+    
+}
+.calculator{
+    text-align: center;
+    border: 1px solid black;
+}
+
+.output{
+    font-size: 80px;
+}
+
+.in{
+    padding: 10px;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #008000;
+}
