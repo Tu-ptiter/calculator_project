@@ -29,6 +29,7 @@ function Calculator() {
 
   return (
     <div className="calculator">
+      <h1>CALCULATOR</h1>
       <form className="output">
         <input type="text" value={input} readOnly className="in" />
         <input type="text" value={result} readOnly className="in" />

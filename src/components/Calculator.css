@@ -1,22 +1,98 @@
-*{
-    margin: 0;
-    padding:0;
-    
-}
-.calculator{
-    text-align: center;
-    border: 1px solid black;
-}
 
-.output{
-    font-size: 80px;
-}
-
-.in{
-    padding: 10px;
-}
-
-button{
-    padding: 10px 20px;
-    background-color: #008000;
-}
+.calculator {
+    width: 300px;
+    margin: 50px auto;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .output {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+  }
+  
+  .in {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #fff;
+    font-size: 18px;
+    text-align: right;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    border-radius: 5px;
+  }
+  
+  .keypad {
+    display: grid;
+    grid-gap: 10px;
+  }
+  
+  .first,
+  .two,
+  .three,
+  .four,
+  .five {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .five {
+    grid-template-columns: 2fr 2fr;
+  }
+  
+  button {
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #e0e0e0;
+    color: #333;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #d0d0d0;
+  }
+  
+  #clear,
+  #backspace {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  #clear:hover,
+  #backspace:hover {
+    background-color: #f57c00;
+  }
+  
+  #equals {
+    background-color: #4caf50;
+    color: white;
+  }
+  
+  #equals:hover {
+    background-color: #45a049;
+  }
+  
+  button[name="/"],
+  button[name="*"],
+  button[name="-"],
+  button[name="+"] {
+    background-color: #ff9800;
+    color: white;
+  }
+  
+  button[name="/"]:hover,
+  button[name="*"]:hover,
+  button[name="-"]:hover,
+  button[name="+"]:hover {
+    background-color: #1e88e5;
+  }
